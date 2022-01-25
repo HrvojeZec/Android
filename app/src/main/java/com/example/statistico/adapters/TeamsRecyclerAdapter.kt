@@ -1,6 +1,7 @@
 package com.example.statistico.adapters
 
 import android.content.Intent
+import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,6 +16,7 @@ import com.example.statistico.StatisticoApplication
 import com.example.statistico.models.Team
 import com.example.statistico.ui.TeamActivity
 import com.squareup.picasso.Picasso
+
 
 class TeamsRecyclerAdapter(private val itemList: MutableList<Team>) :
     RecyclerView.Adapter<TeamsRecyclerAdapter.ViewHolder>() {
@@ -33,6 +35,14 @@ class TeamsRecyclerAdapter(private val itemList: MutableList<Team>) :
         val data = itemList[position]
         holder.layout_main.animation = AnimationUtils.loadAnimation(holder.itemView.context, R.anim.scale)
 
+        holder.layout.setOnLongClickListener {
+            val url = "https://en.wikipedia.org/wiki/" + holder.name.text.toString()
+            val i = Intent(Intent.ACTION_VIEW)
+            i.data = Uri.parse(url)
+            holder.itemView.context.startActivity(i)
+            true
+        }
+
         holder.name.text = data.name
         holder.tournament.text = data.tournament
         holder.rank.text = "#" + data.rank.toString()
@@ -40,6 +50,8 @@ class TeamsRecyclerAdapter(private val itemList: MutableList<Team>) :
             holder.rank.background = AppCompatResources.getDrawable(StatisticoApplication.ApplicationContext, R.drawable.bg_circle_yellow)
         } else if (data.rank == 2) {
             holder.rank.background = AppCompatResources.getDrawable(StatisticoApplication.ApplicationContext, R.drawable.bg_circle_blue)
+        } else {
+            holder.rank.background = AppCompatResources.getDrawable(StatisticoApplication.ApplicationContext, R.drawable.bg_default)
         }
 
         if (getTournamentIMG(data.tournament) == "") {

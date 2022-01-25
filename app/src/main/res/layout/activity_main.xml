@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#006400"
     tools:context=".ui.MainActivity">
 
     <LinearLayout
@@ -12,6 +13,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
         android:paddingTop="20dp"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -19,7 +21,9 @@
             android:id="@+id/btn_Team"
             android:layout_width="125dp"
             android:layout_height="45dp"
+            android:backgroundTint="#f78fa7"
             android:text="Team"
+            android:textColor="#ff1493"
             android:textSize="12sp" />
 
         <Button
@@ -27,14 +31,18 @@
             android:layout_width="125dp"
             android:layout_height="45dp"
             android:layout_marginHorizontal="3dp"
+            android:backgroundTint="#f78fa7"
             android:text="Tournament"
+            android:textColor="#ff1493"
             android:textSize="12sp" />
 
         <Button
             android:id="@+id/btn_Rating"
             android:layout_width="125dp"
             android:layout_height="45dp"
+            android:backgroundTint="#f78fa7"
             android:text="Rating"
+            android:textColor="#ff1493"
             android:textSize="12sp" />
     </LinearLayout>
 

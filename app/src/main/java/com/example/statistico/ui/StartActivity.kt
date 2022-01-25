@@ -1,7 +1,5 @@
 package com.example.statistico.ui
 
-import android.graphics.drawable.GradientDrawable
-import android.icu.lang.UCharacter
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
@@ -17,6 +15,7 @@ class StartActivity : AppCompatActivity() {
         startBinding = ActivityStartBinding.inflate(layoutInflater)
         setContentView(startBinding.root)
 
+        supportActionBar?.hide()
         initializeUI()
     }
 

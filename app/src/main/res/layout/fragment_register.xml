@@ -4,7 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#006400"
     tools:context=".fragments.RegisterFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/start_unknown_image"
+        app:layout_constraintBottom_toTopOf="@id/btn_register"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/eT_nickname"
@@ -13,6 +21,8 @@
         android:layout_marginHorizontal="45dp"
         android:gravity="center"
         android:hint="Nickname"
+        android:textColor="#ff1493"
+        android:textColorHint="#ff1493"
         app:layout_constraintBottom_toTopOf="@id/eT_password" />
 
     <EditText
@@ -24,6 +34,8 @@
         android:gravity="center"
         android:hint="Password"
         android:inputType="textPassword"
+        android:textColor="#ff1493"
+        android:textColorHint="#ff1493"
         app:layout_constraintBottom_toTopOf="@id/btn_register" />
 
     <Button

@@ -94,7 +94,7 @@
         android:id="@+id/tV_player_position"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Player Age"
+        android:text="Player Position"
         android:textColor="@color/black"
         app:layout_constraintLeft_toRightOf="@id/player_position_holder"
         app:layout_constraintTop_toTopOf="@+id/player_position_holder" />

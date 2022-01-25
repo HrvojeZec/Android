@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#006400"
     tools:context=".ui.TeamActivity">
 
     <LinearLayout
@@ -36,6 +37,7 @@
         <TextView
             android:id="@+id/tV_tournament"
             android:layout_width="wrap_content"
+            android:textColor="#C0C0C0"
             android:layout_height="wrap_content"
             android:text="Team League Name" />
 
@@ -51,7 +53,7 @@
                 android:background="@drawable/bg_circle_teal"
                 android:gravity="center"
                 android:text="#"
-                android:textColor="#ff0000" />
+                android:textColor="#FFD700" />
 
             <TextView
                 android:id="@+id/tV_rank"
@@ -59,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="3dp"
                 android:text="Rank 1"
-                android:textColor="#ff0000" />
+                android:textColor="#FFD700" />
 
             <TextView
                 android:layout_width="20dp"
@@ -68,7 +70,7 @@
                 android:background="@drawable/bg_circle_teal"
                 android:gravity="center"
                 android:text="R"
-                android:textColor="#ff0000" />
+                android:textColor="#FFD700" />
 
             <TextView
                 android:id="@+id/tV_rating"
@@ -76,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="3dp"
                 android:text="Rating 1.0"
-                android:textColor="#ff0000" />
+                android:textColor="#FFD700" />
         </LinearLayout>
     </LinearLayout>
 

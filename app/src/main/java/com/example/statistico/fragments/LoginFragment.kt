@@ -39,7 +39,7 @@ class LoginFragment : Fragment() {
                     Toast.makeText(this.context, "Password has to be at least 6 characters long.", Toast.LENGTH_SHORT).show()
                 }
                 else -> {
-                    Firebase.login(username, password);
+                    Firebase.login(username, password)
                 }
             }
         }
