@@ -10,8 +10,9 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:src="@drawable/start_unknown_image"
-        app:layout_constraintBottom_toTopOf="@id/btn_register"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText

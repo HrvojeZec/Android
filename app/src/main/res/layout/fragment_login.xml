@@ -10,8 +10,9 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:src="@drawable/start_known_image"
-        app:layout_constraintBottom_toTopOf="@id/btn_login"
+        android:src="@drawable/icon1"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText

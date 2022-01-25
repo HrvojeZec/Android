@@ -44,6 +44,7 @@
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginLeft="7dp"
+
             android:layout_marginTop="1.5dp"
             android:src="@drawable/ic_launcher_foreground"
             app:layout_constraintLeft_toRightOf="@id/tV_rank"
